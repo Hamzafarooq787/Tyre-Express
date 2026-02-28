@@ -131,7 +131,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#0d7ff2" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#101922" media="(prefers-color-scheme: dark)" />
       </head>
-      <body className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+      <body className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased" suppressHydrationWarning>
         {/* Skip to main content for accessibility */}
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-[100]">
           Skip to main content
