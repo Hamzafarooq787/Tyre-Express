@@ -291,24 +291,25 @@ export default function Home() {
                     had me back on the road in 15. Absolute lifesavers!"
                   </p>
                   
-                  {/* Author */}
-                  <div className="relative z-10 flex items-center gap-3 sm:gap-4 border-t border-slate-700 pt-4 sm:pt-5 md:pt-6 mt-4 sm:mt-5 md:mt-6">
-                    <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-gradient-to-br from-primary to-accent p-[2px]">
-                      <div className="h-full w-full rounded-full bg-slate-800"></div>
+                  {/* Author + Rating */}
+                  <div className="relative z-10 flex flex-wrap items-center justify-between gap-3 border-t border-slate-700 pt-4 sm:pt-5 md:pt-6 mt-4 sm:mt-5 md:mt-6">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-gradient-to-br from-primary to-accent p-[2px] shrink-0">
+                        <div className="h-full w-full rounded-full bg-slate-800"></div>
+                      </div>
+                      <div>
+                        <p className="font-bold text-sm sm:text-base">David Thompson</p>
+                        <p className="text-xs sm:text-sm text-slate-400">Regular Customer</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="font-bold text-sm sm:text-base">David Thompson</p>
-                      <p className="text-xs sm:text-sm text-slate-400">Regular Customer</p>
+                    {/* Rating */}
+                    <div className="flex gap-0.5">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <span key={star} className="material-symbols-outlined text-accent text-lg sm:text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>
+                          star
+                        </span>
+                      ))}
                     </div>
-                  </div>
-                  
-                  {/* Rating */}
-                  <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 flex gap-1">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <span key={star} className="material-symbols-outlined text-accent text-base sm:text-lg">
-                        star
-                      </span>
-                    ))}
                   </div>
                 </div>
               </div>
