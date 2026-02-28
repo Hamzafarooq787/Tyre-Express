@@ -90,22 +90,18 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Map */}
-            <div className="relative overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 h-52 sm:h-64 bg-slate-200 dark:bg-slate-800 group">
-              <div
-                className="absolute inset-0 bg-cover bg-center opacity-80 transition-transform duration-10000 group-hover:scale-110"
-                style={{
-                  backgroundImage:
-                    'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDJKumfwTBY9gtiBGEX5antlnSDRZTiisYx-HjtKsrYdM7kxFQNlNLdudeZnX3NE8CEfgzCVibiGqNcnj68FkFiLEPo3yGvSVa4jgP2U8cshBv8Cy1nZ6lWtQQYYnGKa_AnuTEOZnn-ZSknsJRbyp7a2S08L2DRpjRgaycdZENJhYZTjrglPhjD66bbKF9mtAqy_163K533KRASaeVcVOFhE0G1jPoGrbdN7bJO5NhrQvq6Ev9JUrtGEWAp7VPRoaHnkfppaAp8xyaW")',
-                }}
-              ></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-white dark:bg-slate-900 p-3 sm:p-4 rounded-lg shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-2 sm:gap-3">
-                  <span className="material-symbols-outlined text-primary">location_on</span>
-                  <div>
-                    <p className="font-bold text-xs sm:text-sm">Tyre Express Workshop</p>
-                    <p className="text-xs text-slate-500">123 Industrial Way, Main City</p>
-                  </div>
+            {/* Map - UK Coverage */}
+            <div className="relative overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 h-52 sm:h-64 group">
+              <iframe
+                title="Tyre Express UK Coverage Map"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-10.5,49.5,2.1,58.7&layer=mapnik"
+                className="w-full h-full border-0"
+                loading="lazy"
+              ></iframe>
+              <div className="absolute inset-0 flex items-end justify-center pb-4 pointer-events-none">
+                <div className="bg-white dark:bg-slate-900 px-4 py-2 rounded-full shadow-xl border border-slate-100 dark:border-slate-800 flex items-center gap-2">
+                  <span className="material-symbols-outlined text-primary text-sm">location_on</span>
+                  <p className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white">Serving All Across the UK</p>
                 </div>
               </div>
             </div>

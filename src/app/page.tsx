@@ -223,7 +223,7 @@ export default function Home() {
                   Why Choose Us?
                 </h2>
                 <p className="mb-6 sm:mb-8 md:mb-10 text-base sm:text-lg text-slate-600">
-                  We pride ourselves on speed, reliability, and professional service across the region. Here is what
+                  We pride ourselves on speed, reliability, and professional service all across the UK. Here is what
                   sets us apart from traditional garages.
                 </p>
                 

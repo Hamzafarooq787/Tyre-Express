@@ -24,7 +24,7 @@ export default function ServicesPage() {
               Our Services
             </h2>
             <p className="text-base sm:text-lg text-slate-200 max-w-xl leading-relaxed animate-slide-in-right delay-300">
-              Fast, reliable, and professional roadside assistance across the region. We come to you, 24 hours a day.
+              Fast, reliable, and professional roadside assistance all across the UK. We come to you, 24 hours a day.
             </p>
           </div>
         </div>

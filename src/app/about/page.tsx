@@ -48,8 +48,7 @@ export default function AboutPage() {
 
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm sm:text-base">
                 Founded with a simple goal—to reduce the stress of vehicle breakdowns—we
-                have grown into a leading mobile service provider. Whether you're stuck
-                in the city or on a remote highway, our network of professional operators
+                have grown into a leading mobile service provider.                 Whether you're stuck anywhere in the UK, our network of professional operators
                 is always just a phone call away.
               </p>
 

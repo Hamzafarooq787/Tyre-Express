@@ -67,7 +67,7 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <span className="material-symbols-outlined text-sm text-primary">location_on</span>
                 <span>
-                  24/7 Mobile Service <br /> Covering all major routes
+                  Mobile Service Across the UK <br /> Available on all major routes
                 </span>
               </li>
             </ul>
