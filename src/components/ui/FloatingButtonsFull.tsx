@@ -1,23 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const FloatingButtonsFull = () => {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 500);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <>
       {/* Vertically stacked floating buttons - bottom right */}
@@ -42,18 +27,6 @@ const FloatingButtonsFull = () => {
           <span className="material-symbols-outlined text-2xl">call</span>
         </Link>
       </div>
-
-      {/* Back to Top Button */}
-      {showScrollTop && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-40 right-5 z-50 bg-slate-800 text-white p-3 rounded-full shadow-xl hover:bg-primary transition-all duration-300 hover:scale-110 animate-fade-in"
-          aria-label="Back to top"
-        >
-          <span className="material-symbols-outlined text-2xl">arrow_upward</span>
-        </button>
-      )}
-
     </>
   );
 };
