@@ -31,7 +31,7 @@ export default function Home() {
                 
                 {/* Heading - Responsive Font Sizes */}
                 <div className="flex flex-col gap-2 sm:gap-3 md:gap-4">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.1] tracking-tight text-slate-900 animate-slide-in-left">
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.1] tracking-tight text-slate-900 animate-slide-in-left">
                     Fast & Reliable <br className="hidden xs:block" />
                     <span className="text-primary">Mobile Tyre Fitting</span>
                   </h1>
@@ -44,21 +44,21 @@ export default function Home() {
                 {/* Buttons - Responsive Stack */}
                 <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
                   <Link
-                    href="tel:0745047871"
+                    href="tel:+447495047871"
                     className="flex items-center justify-center gap-2 rounded-xl bg-accent px-5 sm:px-6 md:px-8 py-3 sm:py-4 text-base sm:text-lg font-black text-white shadow-xl shadow-accent/30 hover:scale-105 hover:shadow-2xl transition-all duration-300 group relative overflow-hidden animate-fade-in-up delay-300"
                   >
                     <span className="material-symbols-outlined text-xl sm:text-2xl group-hover:rotate-12 transition-transform animate-ring">
                       phone_in_talk
                     </span>
-                    <span className="whitespace-nowrap">Call Now: 0745047871</span>
+                    <span className="whitespace-nowrap">Call Now: +44 7495 047871</span>
                     <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></span>
                   </Link>
                   
                   <Link
-                    href="#pricing"
+                    href="/services"
                     className="flex items-center justify-center gap-2 rounded-xl border-2 border-slate-200 bg-white px-5 sm:px-6 md:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-slate-900 hover:bg-slate-50 hover:border-primary/30 transition-all duration-300 group animate-fade-in-up delay-500"
                   >
-                    <span>View Pricing</span>
+                    <span>Our Services</span>
                     <span className="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">
                       arrow_forward
                     </span>
@@ -223,7 +223,7 @@ export default function Home() {
                   Why Choose Us?
                 </h2>
                 <p className="mb-6 sm:mb-8 md:mb-10 text-base sm:text-lg text-slate-600">
-                  We pride ourselves on speed, reliability, and professional service across the region. Here is what
+                  We pride ourselves on speed, reliability, and professional service all across the UK. Here is what
                   sets us apart from traditional garages.
                 </p>
                 
@@ -291,24 +291,25 @@ export default function Home() {
                     had me back on the road in 15. Absolute lifesavers!"
                   </p>
                   
-                  {/* Author */}
-                  <div className="relative z-10 flex items-center gap-3 sm:gap-4 border-t border-slate-700 pt-4 sm:pt-5 md:pt-6 mt-4 sm:mt-5 md:mt-6">
-                    <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-gradient-to-br from-primary to-accent p-[2px]">
-                      <div className="h-full w-full rounded-full bg-slate-800"></div>
+                  {/* Author + Rating */}
+                  <div className="relative z-10 flex flex-wrap items-center justify-between gap-3 border-t border-slate-700 pt-4 sm:pt-5 md:pt-6 mt-4 sm:mt-5 md:mt-6">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-gradient-to-br from-primary to-accent p-[2px] shrink-0">
+                        <div className="h-full w-full rounded-full bg-slate-800"></div>
+                      </div>
+                      <div>
+                        <p className="font-bold text-sm sm:text-base">David Thompson</p>
+                        <p className="text-xs sm:text-sm text-slate-400">Regular Customer</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="font-bold text-sm sm:text-base">David Thompson</p>
-                      <p className="text-xs sm:text-sm text-slate-400">Regular Customer</p>
+                    {/* Rating */}
+                    <div className="flex gap-0.5">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <span key={star} className="material-symbols-outlined text-accent text-lg sm:text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>
+                          star
+                        </span>
+                      ))}
                     </div>
-                  </div>
-                  
-                  {/* Rating */}
-                  <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 flex gap-1">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <span key={star} className="material-symbols-outlined text-accent text-base sm:text-lg">
-                        star
-                      </span>
-                    ))}
                   </div>
                 </div>
               </div>
@@ -343,13 +344,13 @@ export default function Home() {
               </p>
               
               <Link
-                href="tel:0745047871"
+                href="tel:+447495047871"
                 className="relative z-10 inline-flex items-center justify-center gap-2 sm:gap-3 md:gap-4 rounded-full bg-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-lg sm:text-xl md:text-2xl font-black text-primary shadow-2xl hover:scale-105 hover:shadow-white/30 transition-all duration-300 group overflow-hidden animate-bounce-gentle"
               >
                 <span className="material-symbols-outlined text-xl sm:text-2xl md:text-3xl group-hover:rotate-12 transition-transform animate-ring">
                   call
                 </span>
-                <span className="whitespace-nowrap">0745047871</span>
+                <span className="whitespace-nowrap">+44 7495 047871</span>
                 <span className="absolute inset-0 bg-primary/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></span>
               </Link>
             </div>

@@ -73,7 +73,7 @@ export const metadata: Metadata = {
       {
         rel: "mask-icon",
         url: "/safari-pinned-tab.svg",
-        color: "#0d7ff2",
+        color: "#FF2400",
       },
     ],
   },
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     userScalable: true,
   },
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#0d7ff2" },
+    { media: "(prefers-color-scheme: light)", color: "#FF2400" },
     { media: "(prefers-color-scheme: dark)", color: "#101922" },
   ],
   category: "automotive",
@@ -118,7 +118,7 @@ export default function RootLayout({
         <meta name="format-detection" content="telephone=yes" />
         
         {/* Emergency contact meta */}
-        <meta name="emergency-contact" content="0745047871" />
+        <meta name="emergency-contact" content="+447495047871" />
         
         {/* Apple specific */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -126,12 +126,12 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Tyre Express" />
         
         {/* Microsoft Tiles */}
-        <meta name="msapplication-TileColor" content="#0d7ff2" />
+        <meta name="msapplication-TileColor" content="#FF2400" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-        <meta name="theme-color" content="#0d7ff2" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#FF2400" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#101922" media="(prefers-color-scheme: dark)" />
       </head>
-      <body className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+      <body className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased" suppressHydrationWarning>
         {/* Skip to main content for accessibility */}
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-[100]">
           Skip to main content
@@ -142,17 +142,7 @@ export default function RootLayout({
           {children}
         </main>
         
-        {/* Emergency contact button - mobile sticky */}
-        <div className="fixed bottom-4 right-4 z-50 md:hidden">
-          <a
-            href="tel:0745047871"
-            className="flex items-center gap-2 bg-primary text-white px-5 py-3 rounded-full shadow-xl shadow-primary/50 hover:bg-primary/90 transition-all animate-pulse"
-            aria-label="Call emergency number 0745047871"
-          >
-            <span className="material-symbols-outlined">emergency</span>
-            <span className="font-bold">0745047871</span>
-          </a>
-        </div>
+
       </body>
     </html>
   );

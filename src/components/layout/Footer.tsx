@@ -58,7 +58,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-3">
               <li className="flex items-start gap-2">
                 <span className="material-symbols-outlined text-sm text-primary">phone</span>
-                0745047871
+                +44 7495 047871
               </li>
               <li className="flex items-start gap-2">
                 <span className="material-symbols-outlined text-sm text-primary">mail</span>
@@ -67,7 +67,7 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <span className="material-symbols-outlined text-sm text-primary">location_on</span>
                 <span>
-                  24/7 Mobile Service <br /> Covering all major routes
+                  Mobile Service Across the UK <br /> Available on all major routes
                 </span>
               </li>
             </ul>

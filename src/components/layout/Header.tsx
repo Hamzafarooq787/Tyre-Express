@@ -22,7 +22,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <div className="text-primary">
               <svg className="w-8 h-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -34,7 +34,7 @@ const Header = () => {
             <span className="text-xl font-black tracking-tight text-slate-900 dark:text-white uppercase">
               Tyre Express
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
@@ -54,11 +54,11 @@ const Header = () => {
           {/* Call Button */}
           <div className="hidden sm:flex items-center gap-4">
             <Link
-              href="tel:0745047871"
+              href="tel:+447495047871"
               className="flex items-center gap-2 bg-primary text-white px-5 py-2 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all"
             >
               <span className="material-symbols-outlined text-sm">call</span>
-              0745047871
+              +44 7495 047871
             </Link>
           </div>
 
@@ -89,16 +89,7 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-            {/* Mobile Call Button */}
-            <li>
-              <Link
-                href="tel:0745047871"
-                className="flex items-center gap-2 bg-primary text-white px-5 py-2 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all"
-              >
-                <span className="material-symbols-outlined text-sm">call</span>
-                0745047871
-              </Link>
-            </li>
+
           </ul>
         </nav>
       )}
