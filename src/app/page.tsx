@@ -31,7 +31,7 @@ export default function Home() {
                 
                 {/* Heading - Responsive Font Sizes */}
                 <div className="flex flex-col gap-2 sm:gap-3 md:gap-4">
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.1] tracking-tight text-slate-900 animate-slide-in-left">
+                  <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.1] tracking-tight text-slate-900 animate-slide-in-left">
                     Fast & Reliable <br className="hidden xs:block" />
                     <span className="text-primary">Mobile Tyre Fitting</span>
                   </h1>
