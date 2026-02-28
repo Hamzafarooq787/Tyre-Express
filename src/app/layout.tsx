@@ -118,7 +118,7 @@ export default function RootLayout({
         <meta name="format-detection" content="telephone=yes" />
         
         {/* Emergency contact meta */}
-        <meta name="emergency-contact" content="0745047871" />
+        <meta name="emergency-contact" content="+447495047871" />
         
         {/* Apple specific */}
         <meta name="apple-mobile-web-app-capable" content="yes" />

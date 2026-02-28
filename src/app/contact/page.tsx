@@ -25,7 +25,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               {/* Phone */}
               <Link
-                href="tel:0745047871"
+                href="tel:+447495047871"
                 className="relative group p-5 sm:p-6 bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-xl hover:border-primary transition-all duration-300 hover:shadow-xl overflow-hidden"
               >
                 <div className="size-10 sm:size-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
@@ -33,7 +33,7 @@ export default function ContactPage() {
                 </div>
                 <h3 className="font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors text-sm sm:text-base">Call Us</h3>
                 <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm mb-2">Speak to an expert now</p>
-                <p className="text-primary font-bold text-sm sm:text-base">0745047871</p>
+                <p className="text-primary font-bold text-sm sm:text-base">+44 7495 047871</p>
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               </Link>
 

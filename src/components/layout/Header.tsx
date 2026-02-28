@@ -54,11 +54,11 @@ const Header = () => {
           {/* Call Button */}
           <div className="hidden sm:flex items-center gap-4">
             <Link
-              href="tel:0745047871"
+              href="tel:+447495047871"
               className="flex items-center gap-2 bg-primary text-white px-5 py-2 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all"
             >
               <span className="material-symbols-outlined text-sm">call</span>
-              0745047871
+              +44 7495 047871
             </Link>
           </div>
 

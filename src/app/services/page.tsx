@@ -76,7 +76,7 @@ export default function ServicesPage() {
 
                 <div className="pt-2">
                   <Link
-                    href="tel:0745047871"
+                    href="tel:+447495047871"
                     className="inline-flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-primary/90 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
                   >
                     <span className="material-symbols-outlined">build</span>
@@ -102,7 +102,7 @@ export default function ServicesPage() {
                 </p>
 
                 <Link
-                  href="tel:0745047871"
+                  href="tel:+447495047871"
                   className="w-full py-3 border-2 border-accent text-accent hover:bg-accent hover:text-white font-bold rounded-lg transition-all duration-300 text-center text-sm sm:text-base relative overflow-hidden group/btn"
                 >
                   <span className="relative z-10">Call for JumpStart</span>
@@ -124,7 +124,7 @@ export default function ServicesPage() {
                 </p>
 
                 <Link
-                  href="tel:0745047871"
+                  href="tel:+447495047871"
                   className="w-full py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold rounded-lg transition-all duration-300 text-center text-sm sm:text-base relative overflow-hidden group/btn"
                 >
                   <span className="relative z-10">Deliver Fuel Now</span>
@@ -151,11 +151,11 @@ export default function ServicesPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
               <Link
-                href="tel:0745047871"
+                href="tel:+447495047871"
                 className="flex items-center justify-center gap-2 sm:gap-3 bg-white text-primary px-6 sm:px-10 py-4 sm:py-5 rounded-full text-lg sm:text-2xl font-black shadow-2xl hover:scale-105 transition-all duration-300"
               >
                 <span className="material-symbols-outlined text-2xl sm:text-3xl">call</span>
-                0745047871
+                +44 7495 047871
               </Link>
 
               <Link

@@ -24,7 +24,7 @@ const FloatingButtonsFull = () => {
       <div className="fixed bottom-6 right-5 z-50 flex flex-col items-end gap-3">
         {/* WhatsApp Button */}
         <Link
-          href="https://wa.me/44745047871?text=Hello%20Tyre%20Express%2C%20I%20need%20emergency%20roadside%20assistance%21"
+          href="https://wa.me/447495047871?text=Hello%20Tyre%20Express%2C%20I%20need%20emergency%20roadside%20assistance%21"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"
@@ -35,8 +35,8 @@ const FloatingButtonsFull = () => {
 
         {/* Call Button */}
         <Link
-          href="tel:0745047871"
-          aria-label="Call 0745047871"
+          href="tel:+447495047871"
+          aria-label="Call +44 7495 047871"
           className="flex items-center justify-center w-13 h-13 bg-primary text-white p-3.5 rounded-full shadow-lg shadow-primary/40 hover:bg-primary/90 transition-all duration-300 hover:scale-110"
         >
           <span className="material-symbols-outlined text-2xl">call</span>

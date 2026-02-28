@@ -44,13 +44,13 @@ export default function Home() {
                 {/* Buttons - Responsive Stack */}
                 <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
                   <Link
-                    href="tel:0745047871"
+                    href="tel:+447495047871"
                     className="flex items-center justify-center gap-2 rounded-xl bg-accent px-5 sm:px-6 md:px-8 py-3 sm:py-4 text-base sm:text-lg font-black text-white shadow-xl shadow-accent/30 hover:scale-105 hover:shadow-2xl transition-all duration-300 group relative overflow-hidden animate-fade-in-up delay-300"
                   >
                     <span className="material-symbols-outlined text-xl sm:text-2xl group-hover:rotate-12 transition-transform animate-ring">
                       phone_in_talk
                     </span>
-                    <span className="whitespace-nowrap">Call Now: 0745047871</span>
+                    <span className="whitespace-nowrap">Call Now: +44 7495 047871</span>
                     <span className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></span>
                   </Link>
                   
@@ -344,13 +344,13 @@ export default function Home() {
               </p>
               
               <Link
-                href="tel:0745047871"
+                href="tel:+447495047871"
                 className="relative z-10 inline-flex items-center justify-center gap-2 sm:gap-3 md:gap-4 rounded-full bg-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-lg sm:text-xl md:text-2xl font-black text-primary shadow-2xl hover:scale-105 hover:shadow-white/30 transition-all duration-300 group overflow-hidden animate-bounce-gentle"
               >
                 <span className="material-symbols-outlined text-xl sm:text-2xl md:text-3xl group-hover:rotate-12 transition-transform animate-ring">
                   call
                 </span>
-                <span className="whitespace-nowrap">0745047871</span>
+                <span className="whitespace-nowrap">+44 7495 047871</span>
                 <span className="absolute inset-0 bg-primary/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></span>
               </Link>
             </div>

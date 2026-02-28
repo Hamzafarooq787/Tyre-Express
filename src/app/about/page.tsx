@@ -152,11 +152,11 @@ export default function AboutPage() {
               </p>
 
               <Link
-                href="tel:0745047871"
+                href="tel:+447495047871"
                 className="inline-flex items-center gap-2 sm:gap-3 bg-primary hover:bg-primary/90 text-white px-7 sm:px-10 py-4 sm:py-5 rounded-full text-lg sm:text-2xl font-black shadow-2xl hover:scale-105 transition-all duration-300 relative z-10"
               >
                 <span className="material-symbols-outlined text-2xl sm:text-3xl">call</span>
-                0745047871
+                +44 7495 047871
               </Link>
             </div>
           </div>
