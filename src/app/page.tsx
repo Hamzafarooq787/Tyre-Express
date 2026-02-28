@@ -35,9 +35,8 @@ export default function Home() {
                     Fast & Reliable <br className="hidden xs:block" />
                     <span className="text-primary">Mobile Tyre Fitting</span>
                   </h1>
-                  <p className="max-w-lg text-sm sm:text-base md:text-lg leading-relaxed text-slate-600 animate-slide-in-right delay-150">
-                    Professional roadside assistance at your doorstep. We bring the garage to you, wherever you are.
-                    No more waiting at service centers.
+                  <p className="text-lg sm:text-xl md:text-2xl font-black text-slate-900 animate-slide-in-right delay-150 tracking-tight">
+                    24-Hour Emergency Tyre Replacement
                   </p>
                 </div>
                 
@@ -99,28 +98,6 @@ export default function Home() {
                     >
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-500"></div>
                     </div>
-                  </div>
-                  
-                  {/* Floating Stats Card - Responsive Positioning */}
-                  <div className="absolute -bottom-4 sm:-bottom-6 left-2 sm:left-4 rounded-xl sm:rounded-2xl bg-white p-3 sm:p-4 md:p-6 shadow-lg sm:shadow-xl animate-float">
-                    <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
-                      <div className="flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-green-100 text-green-600">
-                        <span className="material-symbols-outlined text-base sm:text-lg md:text-xl">verified</span>
-                      </div>
-                      <div>
-                        <p className="text-[10px] sm:text-xs md:text-sm font-bold text-slate-900 whitespace-nowrap">
-                          Average Response
-                        </p>
-                        <p className="text-xs sm:text-sm md:text-base lg:text-xl font-black text-primary">
-                          30-45 Mins
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Floating Icon */}
-                  <div className="absolute -top-4 -right-2 sm:-top-6 sm:-right-4 bg-white p-2 sm:p-3 rounded-full shadow-lg animate-bounce-gentle">
-                    <span className="material-symbols-outlined text-primary text-xl sm:text-2xl">emergency</span>
                   </div>
                 </div>
               </div>
