@@ -55,10 +55,10 @@ export default function Home() {
                   </Link>
                   
                   <Link
-                    href="#pricing"
+                    href="/services"
                     className="flex items-center justify-center gap-2 rounded-xl border-2 border-slate-200 bg-white px-5 sm:px-6 md:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-slate-900 hover:bg-slate-50 hover:border-primary/30 transition-all duration-300 group animate-fade-in-up delay-500"
                   >
-                    <span>View Pricing</span>
+                    <span>Our Services</span>
                     <span className="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">
                       arrow_forward
                     </span>

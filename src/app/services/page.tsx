@@ -101,11 +101,6 @@ export default function ServicesPage() {
                   professional-grade boosters to ensure your vehicle's electronics stay safe.
                 </p>
 
-                <div className="bg-accent/5 p-4 rounded-lg border border-accent/10 mb-5">
-                  <p className="text-xs font-bold text-accent uppercase tracking-widest mb-1">Pricing From</p>
-                  <p className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">£45.00</p>
-                </div>
-
                 <Link
                   href="tel:0745047871"
                   className="w-full py-3 border-2 border-accent text-accent hover:bg-accent hover:text-white font-bold rounded-lg transition-all duration-300 text-center text-sm sm:text-base relative overflow-hidden group/btn"
@@ -128,11 +123,6 @@ export default function ServicesPage() {
                   enough to get you to the nearest filling station.
                 </p>
 
-                <div className="bg-primary/5 p-4 rounded-lg border border-primary/10 mb-5">
-                  <p className="text-xs font-bold text-primary uppercase tracking-widest mb-1">Pricing From</p>
-                  <p className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">£40.00 + Fuel Cost</p>
-                </div>
-
                 <Link
                   href="tel:0745047871"
                   className="w-full py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold rounded-lg transition-all duration-300 text-center text-sm sm:text-base relative overflow-hidden group/btn"
@@ -142,67 +132,6 @@ export default function ServicesPage() {
                 </Link>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Pricing Table */}
-        <section className="bg-slate-50 dark:bg-slate-900/50 py-10 sm:py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-8 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl font-extrabold mb-3">Service Areas & Base Pricing</h2>
-              <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base">
-                Transparent pricing for our mobile call-out services across the region.
-              </p>
-            </div>
-
-            {/* Responsive table — cards on mobile, table on sm+ */}
-            <div className="hidden sm:block overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 shadow-sm">
-              <table className="w-full text-left border-collapse">
-                <thead className="bg-slate-100 dark:bg-slate-700/50 text-slate-600 dark:text-slate-300">
-                  <tr>
-                    <th className="px-5 py-4 font-bold uppercase text-xs">Area / Region</th>
-                    <th className="px-5 py-4 font-bold uppercase text-xs">Call-out Fee</th>
-                    <th className="px-5 py-4 font-bold uppercase text-xs">Response Time</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-100 dark:divide-slate-700">
-                  {[
-                    { area: "City Centre & Inner Suburbs", fee: "£30.00", time: "30-45 Mins", accent: false },
-                    { area: "Outer Ring & Suburbs", fee: "£45.00", time: "45-60 Mins", accent: false },
-                    { area: "Rural & Surrounding Towns", fee: "£60.00+", time: "60-90 Mins", accent: false },
-                    { area: "Motorway Recovery / Assist", fee: "Quote Required", time: "Priority (20-40 Mins)", accent: true },
-                  ].map((row, index) => (
-                    <tr key={index} className="hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors duration-300">
-                      <td className="px-5 py-4 font-medium text-sm">{row.area}</td>
-                      <td className={`px-5 py-4 font-bold text-sm ${row.accent ? "text-accent" : "text-primary"}`}>{row.fee}</td>
-                      <td className="px-5 py-4 text-slate-600 dark:text-slate-400 text-sm">{row.time}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            {/* Mobile card layout */}
-            <div className="flex flex-col gap-4 sm:hidden">
-              {[
-                { area: "City Centre & Inner Suburbs", fee: "£30.00", time: "30-45 Mins", accent: false },
-                { area: "Outer Ring & Suburbs", fee: "£45.00", time: "45-60 Mins", accent: false },
-                { area: "Rural & Surrounding Towns", fee: "£60.00+", time: "60-90 Mins", accent: false },
-                { area: "Motorway Recovery / Assist", fee: "Quote Required", time: "Priority (20-40 Mins)", accent: true },
-              ].map((row, index) => (
-                <div key={index} className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 space-y-2">
-                  <p className="font-semibold text-slate-900 dark:text-white text-sm">{row.area}</p>
-                  <div className="flex items-center justify-between">
-                    <span className={`font-bold text-base ${row.accent ? "text-accent" : "text-primary"}`}>{row.fee}</span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400">{row.time}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <p className="mt-6 text-center text-xs sm:text-sm text-slate-500">
-              * Prices shown are for call-out only. Labour and parts (tyres, fuel) are charged additionally.
-            </p>
           </div>
         </section>
 
