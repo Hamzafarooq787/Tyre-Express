@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Link from "next/link";
+import FloatingButtonsFull from "@/components/ui/FloatingButtonsFull";
 
 export default function ServicesPage() {
   return (
@@ -280,6 +281,7 @@ export default function ServicesPage() {
       </main>
 
       <Footer />
+      <FloatingButtonsFull/>
     </div>
   );
 }

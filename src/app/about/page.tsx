@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/layout/Footer";
+import FloatingButtonsFull from "@/components/ui/FloatingButtonsFull";
 
 export default function AboutPage() {
   return (
@@ -11,9 +12,9 @@ export default function AboutPage() {
       <main className="flex-grow">
         {/* Hero Section with Animation */}
         <section className="relative h-[350px] overflow-hidden">
-          <div className="absolute inset-0 bg-cover bg-center scale-105 animate-slow-zoom" 
+          <div className="absolute inset-0 bg-cover bg-center scale-105 animate-slow-zoom"
             style={{
-              backgroundImage: "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1581090700227-1e8b6a9c1e91?auto=format&fit=crop&w=1600&q=80')",
+              backgroundImage: "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/about.jfif')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -37,17 +38,17 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white">
                 Trusted Expertise on Every Road.
               </h2>
-              
+
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                Tyre Express is your trusted partner for emergency roadside assistance. 
-                We provide fast, reliable tyre changes, jump-starts, and recovery services 
+                Tyre Express is your trusted partner for emergency roadside assistance.
+                We provide fast, reliable tyre changes, jump-starts, and recovery services
                 to get you back on the road safely.
               </p>
 
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                Founded with a simple goal—to reduce the stress of vehicle breakdowns—we 
-                have grown into a leading mobile service provider. Whether you're stuck 
-                in the city or on a remote highway, our network of professional operators 
+                Founded with a simple goal—to reduce the stress of vehicle breakdowns—we
+                have grown into a leading mobile service provider. Whether you're stuck
+                in the city or on a remote highway, our network of professional operators
                 is always just a phone call away.
               </p>
 
@@ -61,7 +62,7 @@ export default function AboutPage() {
                     AVAILABILITY
                   </span>
                 </div>
-                
+
                 <div className="stat-item group animate-pop-in" style={{ animationDelay: "0.2s" }}>
                   <h3 className="text-3xl font-black text-accent group-hover:scale-110 transition-transform duration-300">
                     30min
@@ -70,7 +71,7 @@ export default function AboutPage() {
                     AVG RESPONSE
                   </span>
                 </div>
-                
+
                 <div className="stat-item group animate-pop-in" style={{ animationDelay: "0.3s" }}>
                   <h3 className="text-3xl font-black text-accent group-hover:scale-110 transition-transform duration-300">
                     10K+
@@ -88,8 +89,7 @@ export default function AboutPage() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1606663889134-b1dedb5ed8b7?auto=format&fit=crop&w=800&q=80"
-                    alt="Tyre Express mechanic at work"
+                    src="/Mobile-Tire-Repair.webp" alt="Tyre Express mechanic at work"
                     className="w-full h-auto transform transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -116,7 +116,7 @@ export default function AboutPage() {
                   Our Mission
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                  To provide the fastest and most professional roadside support, ensuring 
+                  To provide the fastest and most professional roadside support, ensuring
                   no driver is ever left stranded for long.
                 </p>
                 <div className="absolute bottom-0 left-0 w-0 h-1 bg-primary group-hover:w-full transition-all duration-500"></div>
@@ -131,7 +131,7 @@ export default function AboutPage() {
                   Safety First
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                  We prioritize the safety of our customers and operators above all else 
+                  We prioritize the safety of our customers and operators above all else
                   during every service call.
                 </p>
                 <div className="absolute bottom-0 left-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-500"></div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
                   Integrity
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Transparent pricing and honest assessments are the cornerstones of how 
+                  Transparent pricing and honest assessments are the cornerstones of how
                   we do business.
                 </p>
                 <div className="absolute bottom-0 left-0 w-0 h-1 bg-green-500 group-hover:w-full transition-all duration-500"></div>
@@ -162,19 +162,19 @@ export default function AboutPage() {
               {/* Animated background elements */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl animate-pulse"></div>
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/20 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl animate-pulse delay-1000"></div>
-              
+
               {/* Floating dots */}
               <div className="absolute top-10 left-10 w-3 h-3 bg-primary/30 rounded-full animate-float"></div>
               <div className="absolute bottom-10 right-10 w-4 h-4 bg-accent/30 rounded-full animate-float delay-500"></div>
-              
+
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 relative z-10 animate-fade-in-up">
                 Need immediate help?
               </h2>
-              
+
               <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto relative z-10 animate-fade-in-up delay-150">
                 Our mobile team is on standby 24 hours a day, 7 days a week.
               </p>
-              
+
               <Link
                 href="tel:0745047871"
                 className="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-full text-2xl font-black shadow-2xl hover:scale-105 hover:shadow-primary/30 transition-all duration-300 relative z-10 animate-bounce-gentle group/btn"
@@ -189,7 +189,8 @@ export default function AboutPage() {
       </main>
 
       {/* Simple Footer (as requested - no footer) */}
-      <Footer/>
+      <Footer />
+      <FloatingButtonsFull />
     </div>
   );
 }
