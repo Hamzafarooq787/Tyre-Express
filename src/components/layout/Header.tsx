@@ -89,16 +89,7 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-            {/* Mobile Call Button */}
-            <li>
-              <Link
-                href="tel:0745047871"
-                className="flex items-center gap-2 bg-primary text-white px-5 py-2 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all"
-              >
-                <span className="material-symbols-outlined text-sm">call</span>
-                0745047871
-              </Link>
-            </li>
+
           </ul>
         </nav>
       )}
