@@ -1,9 +1,21 @@
+"use client";
+
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 import FloatingButtonsFull from "@/components/ui/FloatingButtonsFull";
+import { useState, type FormEvent } from "react";
 
 export default function ContactPage() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const text = `Hello Tyre Express,%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
+    window.open(`https://wa.me/447495047871?text=${text}`, "_blank");
+  }
   return (
     <div className="relative flex min-h-screen flex-col overflow-x-hidden">
       <Header />
@@ -105,7 +117,7 @@ export default function ContactPage() {
               Send us a message
             </h2>
 
-            <form action="#" className="space-y-5" method="POST">
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
                   Full Name
@@ -116,6 +128,8 @@ export default function ContactPage() {
                   name="name"
                   placeholder="John Doe"
                   required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="w-full px-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 dark:bg-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 text-sm"
                 />
               </div>
@@ -130,6 +144,8 @@ export default function ContactPage() {
                   name="email"
                   placeholder="info@tyreexpress.com"
                   required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 dark:bg-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 text-sm"
                 />
               </div>
@@ -144,21 +160,23 @@ export default function ContactPage() {
                   placeholder="How can we help you today?"
                   required
                   rows={5}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="w-full px-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 dark:bg-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 text-sm"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-accent hover:bg-accent/90 text-white font-bold py-3.5 sm:py-4 rounded-lg shadow-lg shadow-accent/20 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 group relative overflow-hidden"
+                className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 sm:py-4 rounded-lg shadow-lg shadow-green-500/20 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 group relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                <span className="material-symbols-outlined group-hover:rotate-12 transition-transform duration-300 text-lg">send</span>
-                <span className="relative z-10 text-sm sm:text-base">Send Message</span>
+                <span className="material-symbols-outlined group-hover:rotate-12 transition-transform duration-300 text-lg">chat</span>
+                <span className="relative z-10 text-sm sm:text-base">Send via WhatsApp</span>
               </button>
 
               <p className="text-center text-xs text-slate-500">
-                By submitting this form, you agree to our privacy policy and terms of service.
+                Tapping the button will open WhatsApp with your message pre-filled.
               </p>
             </form>
           </div>
