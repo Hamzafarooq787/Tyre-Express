@@ -73,7 +73,7 @@ export const metadata: Metadata = {
       {
         rel: "mask-icon",
         url: "/safari-pinned-tab.svg",
-        color: "#0d7ff2",
+        color: "#FF2400",
       },
     ],
   },
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     userScalable: true,
   },
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#0d7ff2" },
+    { media: "(prefers-color-scheme: light)", color: "#FF2400" },
     { media: "(prefers-color-scheme: dark)", color: "#101922" },
   ],
   category: "automotive",
@@ -126,9 +126,9 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Tyre Express" />
         
         {/* Microsoft Tiles */}
-        <meta name="msapplication-TileColor" content="#0d7ff2" />
+        <meta name="msapplication-TileColor" content="#FF2400" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-        <meta name="theme-color" content="#0d7ff2" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#FF2400" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#101922" media="(prefers-color-scheme: dark)" />
       </head>
       <body className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased" suppressHydrationWarning>
