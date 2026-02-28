@@ -62,32 +62,6 @@ export default function ContactPage() {
                 <p className="text-primary font-bold text-xs sm:text-sm break-all">info@tyreexpress.com</p>
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               </Link>
-
-              {/* Working Hours */}
-              <div className="p-5 sm:p-6 bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-xl sm:col-span-2">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="size-9 sm:size-10 bg-accent/10 text-accent rounded-lg flex items-center justify-center">
-                    <span className="material-symbols-outlined text-sm sm:text-base">schedule</span>
-                  </div>
-                  <h3 className="font-bold text-slate-900 dark:text-white text-sm sm:text-base">Working Hours</h3>
-                </div>
-                <div className="grid grid-cols-2 gap-3 text-xs sm:text-sm">
-                  {[
-                    { day: "Mon - Fri", hours: "8:00 AM - 6:00 PM" },
-                    { day: "Saturday", hours: "9:00 AM - 4:00 PM" },
-                    { day: "Sunday", hours: "Closed", accent: true },
-                    { day: "Holidays", hours: "10:00 AM - 2:00 PM" },
-                  ].map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex justify-between border-b border-slate-100 dark:border-slate-700 pb-2"
-                    >
-                      <span className="text-slate-500">{item.day}</span>
-                      <span className={`font-semibold ${item.accent ? "text-accent" : ""}`}>{item.hours}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
 
             {/* Map - UK Coverage */}
