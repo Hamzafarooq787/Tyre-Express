@@ -23,17 +23,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ||
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://tyre-express.co.uk")
-  ),
+  metadataBase: new URL("https://tyre-express.co.uk"),
   alternates: {
-    canonical: "/",
+    canonical: "https://tyre-express.co.uk/",
   },
   openGraph: {
     title: "Tyre Express - Mobile Tyre Fitting & Roadside Assistance",
     description: "24/7 emergency roadside assistance. We come to you with mobile tyre fitting, jump starts, and fuel delivery.",
-    url: "https://tyre-express.co.uk",
+    url: "https://tyre-express.co.uk/",
     siteName: "Tyre Express",
     images: [
       {
@@ -65,17 +62,17 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/site-icon.png" },
-      { url: "/site-icon.png", sizes: "16x16", type: "image/png" },
-      { url: "/site-icon.png", sizes: "32x32", type: "image/png" },
+      { url: "https://tyre-express.co.uk/site-icon.png" },
+      { url: "https://tyre-express.co.uk/site-icon.png", sizes: "16x16", type: "image/png" },
+      { url: "https://tyre-express.co.uk/site-icon.png", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      { url: "/site-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "https://tyre-express.co.uk/site-icon.png", sizes: "180x180", type: "image/png" },
     ],
     other: [
       {
         rel: "mask-icon",
-        url: "/site-icon.png",
+        url: "https://tyre-express.co.uk/site-icon.png",
         color: "#FF2400",
       },
     ],
