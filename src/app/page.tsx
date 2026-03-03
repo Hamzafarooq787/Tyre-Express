@@ -87,7 +87,7 @@ export default function Home() {
                 <div className="relative">
                   {/* Main Image */}
                   <div
-                    className="aspect-video w-full overflow-hidden rounded-2xl sm:rounded-3xl bg-slate-100 shadow-xl sm:shadow-2xl group/image"
+                    className="aspect-[4/3] w-full overflow-hidden rounded-2xl sm:rounded-3xl bg-slate-100 shadow-xl sm:shadow-2xl group/image"
                   >
                     <div
                       className="w-full h-full bg-cover bg-center transition-transform duration-10000 group-hover/image:scale-110"
