@@ -34,10 +34,10 @@ export const metadata: Metadata = {
     siteName: "Tyre Express",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Tyre Express Mobile Service",
+        alt: "Tyre Express - Mobile & 24/7 Tyre Fitting Across the UK",
       },
     ],
     locale: "en_GB",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tyre Express - 24/7 Mobile Tyre Fitting",
     description: "Professional roadside assistance at your doorstep. Available 24/7.",
-    images: ["/twitter-image.jpg"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -62,17 +62,17 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/icon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/icon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/site-icon.png" },
+      { url: "/site-icon.png", sizes: "16x16", type: "image/png" },
+      { url: "/site-icon.png", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/site-icon.png", sizes: "180x180", type: "image/png" },
     ],
     other: [
       {
         rel: "mask-icon",
-        url: "/safari-pinned-tab.svg",
+        url: "/site-icon.png",
         color: "#FF2400",
       },
     ],
@@ -127,7 +127,7 @@ export default function RootLayout({
         
         {/* Microsoft Tiles */}
         <meta name="msapplication-TileColor" content="#FF2400" />
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="msapplication-TileImage" content="/site-icon.png" />
         <meta name="theme-color" content="#FF2400" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#101922" media="(prefers-color-scheme: dark)" />
       </head>
