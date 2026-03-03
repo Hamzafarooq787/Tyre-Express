@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -6,9 +7,14 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div className="col-span-1 md:col-span-2">
-            <div className="mb-6 flex items-center gap-3 text-white">
-              <span className="material-symbols-outlined text-3xl text-primary">tire_repair</span>
-              <h2 className="text-xl font-extrabold tracking-tight">Tyre Express</h2>
+            <div className="mb-6 flex items-center">
+              <Image
+                src="/logo.png"
+                alt="Tyre Express"
+                width={180}
+                height={64}
+                className="h-14 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="mb-6 max-w-sm leading-relaxed">
               Providing elite mobile tyre fitting and emergency roadside assistance across the UK. Fast, reliable, and available when you need us most.
