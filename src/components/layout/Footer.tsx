@@ -85,7 +85,7 @@ const Footer = () => {
               href="https://linkedo.co.uk/"
               rel="nofollow noreferrer"
               target="_blank"
-              className="text-slate-400 hover:text-[#2563EB] transition-colors font-medium text-[#2563EB]"
+              className="font-semibold text-[#FF2400] hover:opacity-80 transition-opacity"
             >
               Linkedo
             </a>
