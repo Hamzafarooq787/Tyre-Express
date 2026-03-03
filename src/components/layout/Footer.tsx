@@ -8,13 +8,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div className="col-span-1 md:col-span-2">
             <div className="mb-6 flex items-center">
-              <Image
-                src="/logo.png"
-                alt="Tyre Express"
-                width={180}
-                height={64}
-                className="h-14 w-auto object-contain brightness-0 invert"
-              />
+              <Link href="/">
+                <Image
+                  src="/logo.png"
+                  alt="Tyre Express"
+                  width={180}
+                  height={64}
+                  className="h-14 w-auto object-contain brightness-0 invert"
+                />
+              </Link>
             </div>
             <p className="mb-6 max-w-sm leading-relaxed">
               Providing elite mobile tyre fitting and emergency roadside assistance across the UK. Fast, reliable, and available when you need us most.
@@ -67,10 +69,6 @@ const Footer = () => {
                 +44 7495 047871
               </li>
               <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-sm text-primary">mail</span>
-                help@tyre-express.co.uk
-              </li>
-              <li className="flex items-start gap-2">
                 <span className="material-symbols-outlined text-sm text-primary">location_on</span>
                 <span>
                   Mobile Service Across the UK <br /> Available on all major routes
@@ -80,7 +78,18 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 border-t border-slate-800 pt-8 text-center text-xs">
-          <p>© 2024 Tyre Express. All rights reserved. Professional Mobile Tyre Services.</p>
+          <p>© 2026 Tyre Express. All rights reserved. Professional Mobile Tyre Services.</p>
+          <p className="mt-2 text-slate-500">
+            Designed &amp; Developed By{" "}
+            <a
+              href="https://linkedo.co.uk/"
+              rel="nofollow noreferrer"
+              target="_blank"
+              className="text-slate-400 hover:text-primary transition-colors"
+            >
+              Linkedo
+            </a>
+          </p>
         </div>
       </div>
     </footer>

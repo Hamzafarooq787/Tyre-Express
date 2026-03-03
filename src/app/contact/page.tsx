@@ -8,12 +8,11 @@ import { useState, type FormEvent } from "react";
 
 export default function ContactPage() {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const text = `Hello Tyre Express,%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
+    const text = `Hello Tyre Express,%0AName: ${encodeURIComponent(name)}%0AMessage: ${encodeURIComponent(message)}`;
     window.open(`https://wa.me/447495047871?text=${text}`, "_blank");
   }
   return (
@@ -34,7 +33,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           {/* Contact Info & Map */}
           <div className="space-y-6 sm:space-y-8 animate-fade-in-left">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 gap-4 sm:gap-6">
               {/* Phone */}
               <Link
                 href="tel:+447495047871"
@@ -46,20 +45,6 @@ export default function ContactPage() {
                 <h3 className="font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors text-sm sm:text-base">Call Us</h3>
                 <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm mb-2">Speak to an expert now</p>
                 <p className="text-primary font-bold text-sm sm:text-base">+44 7495 047871</p>
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-              </Link>
-
-              {/* Email */}
-              <Link
-                href="mailto:info@tyreexpress.com"
-                className="relative group p-5 sm:p-6 bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-xl hover:border-primary transition-all duration-300 hover:shadow-xl overflow-hidden"
-              >
-                <div className="size-10 sm:size-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                  <span className="material-symbols-outlined">mail</span>
-                </div>
-                <h3 className="font-bold text-slate-900 dark:text-white mb-1 group-hover:text-primary transition-colors text-sm sm:text-base">Email Us</h3>
-                <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm mb-2">We reply within 2 hours</p>
-                <p className="text-primary font-bold text-xs sm:text-sm break-all">info@tyreexpress.com</p>
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               </Link>
             </div>
@@ -100,22 +85,6 @@ export default function ContactPage() {
                   required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 dark:bg-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 text-sm"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="info@tyreexpress.com"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 dark:bg-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 text-sm"
                 />
               </div>
