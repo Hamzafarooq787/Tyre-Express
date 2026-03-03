@@ -23,18 +23,21 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://tyre-express.com"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://tyre-express.co.uk")
+  ),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Tyre Express - Mobile Tyre Fitting & Roadside Assistance",
     description: "24/7 emergency roadside assistance. We come to you with mobile tyre fitting, jump starts, and fuel delivery.",
-    url: "https://tyre-express.com",
+    url: "https://tyre-express.co.uk",
     siteName: "Tyre Express",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre-Express%20Open-Graph%20%281%29-L9dUPCZWtFKSppUkRuhaTZ69VAUP1D.png",
         width: 1200,
         height: 630,
         alt: "Tyre Express - Mobile & 24/7 Tyre Fitting Across the UK",
@@ -47,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tyre Express - 24/7 Mobile Tyre Fitting",
     description: "Professional roadside assistance at your doorstep. Available 24/7.",
-    images: ["/og-image.png"],
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre-Express%20Open-Graph%20%281%29-L9dUPCZWtFKSppUkRuhaTZ69VAUP1D.png"],
   },
   robots: {
     index: true,
